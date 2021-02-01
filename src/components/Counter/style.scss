@@ -1,0 +1,9 @@
+@use 'src/styles/vars';
+
+.taskCounter {
+  color: vars.$color-light;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid vars.$color-light;
+  padding-bottom: vars.$gutter;
+}

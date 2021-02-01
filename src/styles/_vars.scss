@@ -1,0 +1,17 @@
+// Utilisation du built in module color
+// https://sass-lang.com/documentation/modules/color
+@use 'sass:color';
+
+$color: #2e5849;
+// Utilisation de la fonction scale du module color
+// https://sass-lang.com/documentation/modules/color#scale
+$color-dark: color.scale($color, $lightness: -40%);
+$color-darker: color.scale($color, $lightness: -60%);
+$color-light: #ffffff;
+$color-grey: #eeeeee;
+$color-grey-dark: color.scale($color-grey, $lightness: -40%);;
+$color-placeholder: rgba(255, 255, 255, .5);
+
+$gutter: 1em;
+$input-shadow: inset 0px 0px 25px 25px rgba(0,0,0,0.1);
+$input-shadow-focus: inset 0px 0px 25px 25px rgba(0,0,0,0.3);
